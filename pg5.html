@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Registration Form</title>
+        <style>
+            label{
+                font-weight:bold;
+                width: 100px;
+                display: inline-block;
+                margin-left: 15ps;
+            }
+            
+            #form{
+                margin:auto;
+                border-radius: 10px;
+                width:600px;
+                background-color: rgb(111, 255, 173) ;
+              
+            }
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="form">
+            <h1>Student Registration Form</h1>
+            <form action="" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="USN" id="usn">USN:</label>
+                <input type="text" id="usn" name="usn" required><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea><br><br>
+                <label>subject prefernces</label>
+                <input type="checkbox" id="webdev" name="webdev" value="webdev">
+                <label for="webdev">Web Development</label>
+                <input type="checkbox" id="java" name="java" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="python" name="python" value="python">
+                <label for="python">Python</label><br><br>
+                
+                <label for="file">Upload your photo :</label>
+                <input type="file" id="file" name="file" ><br><br>
+                
+                <label for="payment options">Payment Options</label>
+                <select id="payment options" name="payment options">
+                    <option value="cash">Cash</option>
+                    <option value="credit card">Credit Card</option>
+                    <option value="paypal">Paypal</option>
+                </select><br><br>
+                
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </body>
+</html>
+
